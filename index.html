@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Gülez Nakliyat | Derince Kocaeli Evden Eve Nakliyat</title>
+  <meta name="description" content="Gülez Nakliyat: Derince ve Kocaeli'de 7/24 evden eve, ofis ve şehirlerarası nakliyat. Ücretsiz keşif, asansörlü taşıma ve WhatsApp'tan hızlı fiyat teklifi. 0551 343 98 13">
+  <meta name="theme-color" content="#0b1f3a">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Sabit gökyüzü: scroll ilerledikçe gündüzden geceye döner -->
+  <div class="sky" aria-hidden="true">
+    <div class="stars"></div>
+    <div class="sun"></div>
+    <div class="moon"></div>
+  </div>
+
+  <div class="topbar" aria-hidden="true"><span></span></div>
+
+  <header class="header">
+    <div class="wrap header-inner">
+      <a href="#top" class="logo" aria-label="Ana sayfa">
+        <span class="logo-mark"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M1 5h13v11H1z"/><path d="M14 9h4l4 4v3h-8z"/><circle cx="5.5" cy="18" r="2"/><circle cx="17.5" cy="18" r="2"/></svg></span>
+        <span data-firma>Gülez Nakliyat</span>
+      </a>
+      <nav class="nav" aria-label="Ana menü">
+        <a href="#hizmetler">Hizmetler</a>
+        <a href="#surec">Süreç</a>
+        <a href="#neden">Neden Biz</a>
+        <a href="#teklif">Teklif Al</a>
+        <a href="#iletisim">İletişim</a>
+      </nav>
+      <a href="#" class="btn btn-amber header-call" data-tel aria-label="Telefonla ara">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+        <span data-tel-text>0551 343 98 13</span>
+      </a>
+    </div>
+  </header>
+
+  <main id="top">
+
+    <!-- HERO: Körfez manzarası, katmanlar farklı hızlarda hareket eder -->
+    <section class="hero">
+      <div class="hero-stage">
+      <div class="hero-copy">
+        <span class="pill"><i class="dot"></i> Derince · Kocaeli · 7/24 açık</span>
+        <h1>Yeni evinize<br><span class="hl">güvenle</span> taşıyoruz.</h1>
+        <p>Evden eve, ofis ve şehirlerarası nakliyatta özenli ekip, asansörlü taşıma ve net fiyat. Bir mesajınız yeter.</p>
+        <div class="cta">
+          <a href="#" class="btn btn-wa btn-lg" data-wa>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+            WhatsApp'tan Yaz
+          </a>
+          <a href="#" class="btn btn-glass btn-lg" data-tel>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+            Hemen Ara
+          </a>
+        </div>
+        <a href="#" class="rating" data-google target="_blank" rel="noopener">
+          <span class="stars-txt">★★★★★</span>
+          <b data-puan>4,9</b> · <span data-yorum>21</span> Google yorumu
+        </a>
+      </div>
+
+      <div class="hero-copy2" aria-hidden="true">
+        <span>Körfezin iki yakasından</span>
+        <strong>Türkiye'nin her yerine.</strong>
+      </div>
+
+      <!-- data-z: 0 = en uzak (yavaş), 1 = en yakın (hızlı) -->
+      <div class="layer l-mountains" data-z="0.05" aria-hidden="true"></div>
+      <div class="layer l-city" data-z="0.15" aria-hidden="true"></div>
+      <div class="layer l-water" data-z="0.3" aria-hidden="true"><div class="ship"></div></div>
+      <div class="layer l-hills" data-z="0.5" aria-hidden="true"></div>
+      <div class="layer l-road" data-z="0.08" aria-hidden="true"><div class="hero-truck" data-truck></div></div>
+
+      <div class="scroll-cue" aria-hidden="true"><span class="mouse"></span>Kaydırın</div>
+      </div>
+    </section>
+
+    <!-- HİZMETLER -->
+    <section class="paper curtain" id="hizmetler">
+      <span class="float-box fb1" data-speed="-0.25" aria-hidden="true"></span>
+      <span class="float-box fb2" data-speed="0.18" aria-hidden="true"></span>
+      <span class="float-box fb3" data-speed="-0.12" aria-hidden="true"></span>
+
+      <div class="wrap">
+        <div class="head reveal">
+          <span class="kicker">Hizmetlerimiz</span>
+          <h2>Ne taşınacaksa,<br>özenle taşınır.</h2>
+        </div>
+
+        <div class="services">
+          <article class="svc reveal">
+            <span class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 11l9-7 9 7"/><path d="M5 10v10h14V10"/><path d="M10 20v-6h4v6"/></svg></span>
+            <h3>Evden Eve Nakliyat</h3>
+            <p>Paketleme, taşıma ve yerleşim; anahtar teslim taşınma.</p>
+          </article>
+          <article class="svc reveal" data-speed="-0.07" data-dsk>
+            <span class="svc-icon"><svg viewBox="0 0 24 24"><rect x="5" y="3" width="14" height="18" rx="1"/><path d="M9 10l3-3 3 3M9 14l3 3 3-3"/></svg></span>
+            <h3>Asansörlü Taşıma</h3>
+            <p>Yüksek katlarda dış cephe asansörüyle hızlı ve çiziksiz taşıma.</p>
+          </article>
+          <article class="svc reveal">
+            <span class="svc-icon"><svg viewBox="0 0 24 24"><circle cx="6" cy="19" r="2"/><circle cx="18" cy="5" r="2"/><path d="M8 19h8a3 3 0 0 0 0-6H8a3 3 0 0 1 0-6h8"/></svg></span>
+            <h3>Şehirlerarası Nakliyat</h3>
+            <p>Kocaeli'den Türkiye'nin her yerine planlı taşıma.</p>
+          </article>
+          <article class="svc reveal">
+            <span class="svc-icon"><svg viewBox="0 0 24 24"><rect x="4" y="3" width="16" height="18" rx="1"/><path d="M8 7h2M14 7h2M8 11h2M14 11h2M8 15h2M14 15h2"/></svg></span>
+            <h3>Ofis &amp; İşyeri Taşıma</h3>
+            <p>İşinizi aksatmadan, mesai dışında düzenli taşıma.</p>
+          </article>
+          <article class="svc reveal" data-speed="-0.07" data-dsk>
+            <span class="svc-icon"><svg viewBox="0 0 24 24"><path d="M3 7l9-4 9 4-9 4-9-4z"/><path d="M3 7v10l9 4 9-4V7"/><path d="M12 11v10"/></svg></span>
+            <h3>Profesyonel Paketleme</h3>
+            <p>Kırılacaklar ve mobilyalar uygun malzemeyle tek tek korunur.</p>
+          </article>
+          <article class="svc reveal">
+            <span class="svc-icon"><svg viewBox="0 0 24 24"><path d="M14 3h7v7"/><path d="M21 3l-8 8"/><rect x="3" y="11" width="10" height="10" rx="1"/></svg></span>
+            <h3>Parça Eşya Taşıma</h3>
+            <p>Tek bir dolap ya da birkaç koli; küçük işlere de uygun fiyat.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- SÜREÇ: dikey scroll ile yatay ilerleyen yolculuk -->
+    <section class="hs" id="surec">
+      <div class="hs-sticky">
+        <div class="hs-far" aria-hidden="true"></div>
+        <div class="hs-mid" aria-hidden="true"></div>
+
+        <div class="hs-track">
+          <div class="hs-panel hs-intro">
+            <span class="kicker light">Süreç</span>
+            <h2>Kapınızdan yeni evinize, 4 durak.</h2>
+            <p class="hs-hint">Kaydırmaya devam edin, yola çıkıyoruz
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+            </p>
+          </div>
+          <article class="hs-panel step">
+            <span class="step-num">01</span>
+            <h3>Ücretsiz keşif</h3>
+            <p>Evinize gelir, eşyaları yerinde görür ve size net bir fiyat veririz.</p>
+          </article>
+          <article class="hs-panel step">
+            <span class="step-num">02</span>
+            <h3>Özenli paketleme</h3>
+            <p>Kırılacaklar, mobilyalar ve beyaz eşyalar uygun malzemeyle korunur.</p>
+          </article>
+          <article class="hs-panel step">
+            <span class="step-num">03</span>
+            <h3>Güvenli yolculuk</h3>
+            <p>Asansörlü sistem ve kapalı kasa araçla eşyalarınız yola çıkar.</p>
+          </article>
+          <article class="hs-panel step">
+            <span class="step-num">04</span>
+            <h3>Yerleşim</h3>
+            <p>Mobilyalar kurulur, her şey istediğiniz yere yerleştirilir.</p>
+          </article>
+          <div class="hs-panel hs-end">
+            <h3>Sıradaki durak<br>sizin yeni eviniz.</h3>
+            <a href="#teklif" class="btn btn-amber btn-lg">Teklif Al</a>
+          </div>
+        </div>
+
+        <div class="hs-road" aria-hidden="true">
+          <span class="hs-dash"></span>
+          <div class="hs-truck" data-truck></div>
+        </div>
+        <div class="hs-progress" aria-hidden="true"><span></span></div>
+      </div>
+    </section>
+
+    <!-- BÜYÜK YAZI BANDI -->
+    <section class="band" aria-label="Eşyalarınız bizim için emanettir">
+      <div class="band-dots" data-speed="0.3" aria-hidden="true"></div>
+      <p class="band-line" data-dir="-1" aria-hidden="true">Eşyalarınız</p>
+      <p class="band-line outline" data-dir="1" aria-hidden="true">bizim için</p>
+      <p class="band-line" data-dir="-1" aria-hidden="true"><em>emanettir.</em></p>
+    </section>
+
+    <!-- NEDEN BİZ: sol taraf sabit, sağ taraf akar -->
+    <section class="paper" id="neden">
+      <div class="wrap why">
+        <div class="why-sticky">
+          <span class="kicker">Neden Gülez?</span>
+          <h2>Taşınmanın güvenilir hali.</h2>
+          <p class="why-lead">Müşterilerimizin bizi nasıl değerlendirdiğini Google'da görebilirsiniz.</p>
+          <a href="#" class="g-card" data-google target="_blank" rel="noopener">
+            <span class="g-logo">G</span>
+            <span class="g-score"><b data-puan>4,9</b><small>/5</small></span>
+            <span class="g-meta"><span class="stars-txt">★★★★★</span><span><span data-yorum>21</span> Google yorumu</span></span>
+            <span class="g-go">Yorumları oku →</span>
+          </a>
+        </div>
+
+        <div class="why-list">
+          <article class="why-item reveal">
+            <span class="why-big">7/24</span>
+            <h3>Gece gündüz ulaşılabilir</h3>
+            <p>Taşınma planı gece aklınıza düşse de arayabilirsiniz. Telefonlarımız her saat açık.</p>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-big">Derince</span>
+            <h3>Yerel ve yakın</h3>
+            <p>Derince merkezli ekibimizle Kocaeli'nin tüm ilçelerine hızlıca ulaşıyoruz.</p>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-big">₺</span>
+            <h3>Net fiyat, sürpriz yok</h3>
+            <p>Keşif sonrası verdiğimiz fiyat taşınma günü değişmez. Gizli ücret yok.</p>
+          </article>
+          <article class="why-item reveal">
+            <span class="why-big">♥</span>
+            <h3>Eşyanıza kendi eşyamız gibi</h3>
+            <p>Her koli, her mobilya özenle paketlenir ve teslimde birlikte kontrol edilir.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- TEKLİF FORMU → WhatsApp -->
+    <section class="quote" id="teklif">
+      <span class="qbox q1" data-speed="0.35" aria-hidden="true"></span>
+      <span class="qbox q2" data-speed="-0.2" aria-hidden="true"></span>
+      <span class="qbox q3" data-speed="0.15" aria-hidden="true"></span>
+      <span class="qbox q4" data-speed="-0.4" aria-hidden="true"></span>
+
+      <div class="wrap quote-grid">
+        <div class="quote-text reveal">
+          <span class="kicker light">Hızlı teklif</span>
+          <h2>Formu doldurun, teklifiniz WhatsApp'tan gelsin.</h2>
+          <p>Bilgileriniz hazır bir WhatsApp mesajına dönüşür. Gönder'e basmanız yeterli.</p>
+        </div>
+
+        <form class="form reveal" id="teklifForm" novalidate>
+          <div class="field full">
+            <label for="ad">Adınız Soyadınız</label>
+            <input id="ad" name="ad" type="text" autocomplete="name" placeholder="Örn. Ayşe Yılmaz" required>
+          </div>
+          <div class="field">
+            <label for="nereden">Nereden</label>
+            <input id="nereden" name="nereden" type="text" placeholder="İl / İlçe" required>
+          </div>
+          <div class="field">
+            <label for="nereye">Nereye</label>
+            <input id="nereye" name="nereye" type="text" placeholder="İl / İlçe" required>
+          </div>
+          <div class="field">
+            <label for="tarih">Taşınma tarihi</label>
+            <input id="tarih" name="tarih" type="date">
+          </div>
+          <div class="field">
+            <label for="tip">Ev / İşyeri tipi</label>
+            <select id="tip" name="tip">
+              <option>1+1</option>
+              <option selected>2+1</option>
+              <option>3+1</option>
+              <option>4+1 ve üzeri</option>
+              <option>Villa</option>
+              <option>Ofis / İşyeri</option>
+              <option>Parça eşya</option>
+            </select>
+          </div>
+          <div class="field full">
+            <label for="not">Notunuz <small>(isteğe bağlı)</small></label>
+            <textarea id="not" name="not" rows="2" placeholder="Kat, asansör, özel eşyalar..."></textarea>
+          </div>
+          <p class="form-error" role="alert" hidden>Lütfen ad, nereden ve nereye alanlarını doldurun.</p>
+          <button type="submit" class="btn btn-wa btn-lg full">WhatsApp ile Teklif İste</button>
+        </form>
+      </div>
+    </section>
+
+    <!-- SSS -->
+    <section class="paper" id="sss">
+      <div class="wrap narrow">
+        <div class="head reveal">
+          <span class="kicker">Sıkça sorulanlar</span>
+          <h2>Aklınızdakiler</h2>
+        </div>
+        <div class="faq">
+          <details class="reveal">
+            <summary>Fiyat nasıl belirleniyor?</summary>
+            <p>Eşya miktarı, kat ve asansör durumu, mesafe ve tarihe göre. Ücretsiz keşif sonrası net fiyat veriyoruz.</p>
+          </details>
+          <details class="reveal">
+            <summary>Gece veya hafta sonu ulaşabilir miyim?</summary>
+            <p>Evet, 7/24 açığız. Dilediğiniz saatte arayabilir ya da WhatsApp'tan yazabilirsiniz.</p>
+          </details>
+          <details class="reveal">
+            <summary>Paketleme malzemesini siz mi getiriyorsunuz?</summary>
+            <p>Evet. Koli, streç film, baloncuklu naylon ve battaniye gibi tüm malzemeleri ekibimiz getirir.</p>
+          </details>
+          <details class="reveal">
+            <summary>Ne kadar önceden haber vermeliyim?</summary>
+            <p>Mümkünse 1–2 hafta önce. Ay sonları yoğun olur; acil taşımalar için de bizi arayın.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- GECE: iletişim + footer -->
+    <section class="night" id="iletisim">
+      <div class="wrap night-copy">
+        <span class="pill"><i class="dot"></i> Şu an açığız</span>
+        <h2 class="reveal">Gece gündüz,<br>bir telefon kadar yakınız.</h2>
+
+        <div class="night-cards">
+          <a href="#" class="glass reveal" data-tel>
+            <span class="gc-icon"><svg viewBox="0 0 24 24"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg></span>
+            <span class="gc-t">Telefon</span>
+            <span class="gc-v" data-tel-text>0551 343 98 13</span>
+          </a>
+          <a href="#" class="glass reveal" data-wa>
+            <span class="gc-icon wa"><svg viewBox="0 0 24 24"><path d="M3.5 20.5l1.3-4A8.5 8.5 0 1 1 8 19.6z"/><path d="M9 9.5c0 3 2.5 5.5 5.5 5.5"/></svg></span>
+            <span class="gc-t">WhatsApp</span>
+            <span class="gc-v">Hemen yazın</span>
+          </a>
+          <a href="#" class="glass reveal" data-google target="_blank" rel="noopener">
+            <span class="gc-icon"><svg viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-12a7 7 0 0 1 14 0c0 5.8-7 12-7 12z"/><circle cx="12" cy="9" r="2.5"/></svg></span>
+            <span class="gc-t">Adres · Yol tarifi</span>
+            <span class="gc-v sm" data-adres>Gülezler İşhanı, Çenedağ, Denizciler Cd., Derince/Kocaeli</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="night-city back" data-speed="0.12" aria-hidden="true"></div>
+      <div class="night-city front" aria-hidden="true"></div>
+      <div class="night-ground" aria-hidden="true"><div class="night-truck" data-truck></div></div>
+
+      <footer class="footer">
+        <div class="wrap footer-inner">
+          <span>© <span id="yil"></span> <span data-firma>Gülez Nakliyat</span> · Derince / Kocaeli</span>
+          <a href="#" data-google target="_blank" rel="noopener">Google profilimiz →</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Masaüstü yüzen butonlar -->
+  <div class="fab-stack">
+    <a href="#" class="fab fab-call" data-tel aria-label="Telefonla ara">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+    </a>
+    <a href="#" class="fab fab-wa" data-wa aria-label="WhatsApp'tan mesaj gönder">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+    </a>
+  </div>
+
+  <!-- Mobil alt bar -->
+  <div class="mobile-bar">
+    <a href="#" class="mb-call" data-tel>
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></svg>
+      Ara
+    </a>
+    <a href="#" class="mb-wa" data-wa>
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.3-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
+      WhatsApp
+    </a>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
